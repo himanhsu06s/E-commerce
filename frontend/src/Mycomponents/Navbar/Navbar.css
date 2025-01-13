@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+.navbar {
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 2px 3px -1px black;
+    background-color: rgb(228, 228, 228);
+    width: 100%;
+    height: 10vh;
+    border-radius: 10px;
+    margin-bottom: 4.8px;
+    font-family: 'Merriweather', serif;
+}
+
+.navlogo a {
+    margin: 2vh;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.navlogo:hover {
+    transform: scale(1.09);
+    transition: 0.3s;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 90px;
+    font-size: 20px;
+}
+
+.nav-menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 3px 0;
+}
+
+.nav-menu li a:hover {
+    border: 2px solid black;
+    background-color: #ff7171;
+    color: white;
+    font-weight: 300;
+    transform: scale(1.09);
+    transition: 0.4s;
+    box-shadow: 0 2px 3px -1px black;
+}
+
+.nav-menu li a:active {
+    background-color: #f89a0d;
+}
+
+.nav-menu hr {
+    border: none;
+    margin-top: 0.8px;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background-color: #ff4141;
+}
+
+.nav-login-car {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.nav-login-car button {
+    width: 137px;
+    height: 58px;
+    outline: none;
+    border: 2px solid rgb(255, 140, 0);
+    border-radius: 15px;
+    color: rgb(225 140 0);
+    font-size: 18px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.nav-login-car button a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-login-car button:hover {
+    background-color: rgb(255, 140, 0);
+    color: white;
+    transform: scale(1.1);
+    transition: 0.5s;
+    box-shadow: 3px 3px 3px 2px black;
+}
+
+.nav-login-car button:active {
+    background-color: rgb(228, 191, 146);
+}
+
+.nav-cart-count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 4px;
+    right: 10vw;
+    border-radius: 11px;
+    font-size: 14px;
+    background-color: red;
+    color: white;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+
+@media screen and (max-width:1120px) {
+    .mobile-menu-icon{
+        display: block;
+        margin-top: 20px;
+    }
+    .navlogo img{
+        height: calc(50px + 0.5*(100vw - 1120px)/100);
+        width: auto;
+    }
+    .nav-login-car{
+        display: none;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .nav-menu.open{
+        display: flex;
+        gap:10px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-menu li{
+        margin-bottom: 10px;
+        
+    }
+}

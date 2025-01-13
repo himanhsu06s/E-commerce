@@ -1,0 +1,83 @@
+/* Base styles */
+
+.loginSingup {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fdc5c5;
+}
+
+.loginSingup-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+    width: 30vw;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.loginSingup-container h1 {
+    margin: 1vh auto;
+    margin-bottom: 5vh;
+}
+
+.loginSingup-field {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.name input {
+    width: 10vw;
+    height: 4vh;
+    border: 1px solid black;
+}
+
+.components {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.components input {
+    width: 22vw;
+    height: 4vh;
+}
+
+.login-singup p {
+    margin-left: 15vw;
+}
+
+.loginSingup-field button {
+    width: 22vw;
+    height: 5vh;
+    background: linear-gradient(rgb(219, 98, 98), rgb(112, 115, 192));
+    outline: none;
+    cursor: pointer;
+    color: white;
+    font-size: 1vw;
+    font-weight: 800;
+}
+
+.loginSingup-field button:active {
+    background: linear-gradient(rgb(132, 132, 255), rgb(208, 89, 89));
+}
+
+.loginSingup-field label {
+    text-align: left;
+}
+.loginSingup-field b{
+    color: red;
+    font-weight: 700;
+    font-size: 15px;
+}

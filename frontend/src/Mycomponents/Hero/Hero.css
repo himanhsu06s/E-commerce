@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+.hero {
+    display: flex;
+    text-align: left;
+    height: 88vh;
+    width: 100vw;
+    background: linear-gradient(180deg, #e79494, #d9fde4);
+    border-radius: 10px;
+}
+
+.hero-left {
+    flex: 1;
+    display: flex;
+    width: 600px;
+    max-width: 600px;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 180px;
+    line-height: 1.1;
+    font-family: 'Merriweather', serif;
+}
+
+.hero-left h2 {
+    color: #393232;
+    font-size: 28px;
+    width: 300px;
+}
+.hero-left label{
+    display: block;
+    color: #080707;
+    font-size: 90px;
+    font-weight: 700;
+}
+.hero-left p {
+    color: #080707;
+    font-size: 90px;
+    font-weight: 700;
+}
+
+.hero-hand-icon {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero-hand-icon img {
+    width: 80px;
+}
+
+.hero-latest-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 310px;
+    cursor: pointer;
+    height: 60px;
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #fc6d6d;
+    color: black;
+    font-size: 28px;
+    font-weight: 500;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 25px;
+    border: none;
+    margin-top: 65px;
+}
+.hero-latest-btn:hover{
+    background-color: #fa8517;
+    border: 1px solid black;
+    color: #e5e4e5;
+    transform: scale(1.15);
+    transition: 0.7s;
+    box-shadow: 0 3px 3px -1px black;
+}
+.hero-latest-btn:hover:active{
+    background-color: #eaaf7b;
+}
+.hero-right img{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-top: 50px;
+    height: 80vh;
+    position: absolute;
+    right: 12vw;
+}
+.hero-right img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 568px) {
+  .hero {
+    display: flex;
+    text-align: left;
+    height: auto;
+    width: 100%;
+    background: linear-gradient(180deg, #e79494, #d9fde4);
+    border-radius: 10px;
+    margin: 1px;
+}
+.hero-right img{
+  height: 18.8vh;
+  margin-top: 2px;
+  display: flex;
+  align-items:center;
+  justify-content: flex-end;
+}
+.hero-left {
+  width: 200px;
+  max-width: calc(200px + 0.9*(100vw - 568px)/100);
+  height: auto;
+  padding-left: 10px;
+  line-height: 1;
+  margin-top: 40px;
+  margin-left: 8vw;
+}
+.hero-left h2 {
+  color: #393232;
+  font-size: calc(15px + 1.5*(100vw - 568px)/100);
+  width: 200px;
+}
+.hero-left label{
+  color: #080707;
+  font-size: calc(15px + 1.5*(100vw - 568px)/100);
+  font-weight: 700;
+}
+.hero-left p {
+  color: #080707;
+  font-size: calc(15px + 1.5*(100vw - 568px)/100);
+  font-weight: 600;
+}
+
+.hero-hand-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-hand-icon img {
+  width: 20px;
+}
+.hero-latest-btn{
+  gap: 5px;
+  width: 120px;
+  cursor: pointer;
+  height: 20px;
+  font-size: 9px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.hero-latest-btn img{
+  width: calc(10px + 0.3*(100vw - 568px)/100);
+}
+}

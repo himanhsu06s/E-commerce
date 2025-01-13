@@ -1,0 +1,34 @@
+import React, { useState } from 'react';
+import './Navbar.css';
+import logo from '../Assets/logo.png';
+import cart_icon from '../Assets/cart_icon.png';
+import { Link } from 'react-router-dom';
+
+export const Navbar = () => {
+    const [menu, setMenu] = useState("shop");
+
+    return (
+        <div>
+            <nav className='navbar'>
+                <div className="navlogo" onClick={()=>{setMenu("shop")}} >
+                <Link to="/"><img src={logo} alt="logo" />
+                    <h2>BUY IT</h2></Link>
+                </div>
+                <ul className="nav-menu">
+                    <li onClick={() => { setMenu("shop") }}><Link to="/">Home</Link>{menu === "shop" ? <hr /> : <></>}</li>
+                    <li onClick={() => { setMenu("Electronic") }}><Link to="/electronic">Electronics</Link>{menu === "Electronic" ? <hr /> : <></>}</li>
+                    <li onClick={() => { setMenu("smartphone") }}><Link to="/smartphone">Smartphone</Link>{menu === "smartphone" ? <hr /> : <></>}</li>
+                    <li onClick={() => { setMenu("travel") }}><Link to="/travel">Travel</Link>{menu === "travel" ? <hr /> : <></>}</li>
+                    <li onClick={() => { setMenu("Mens") }}><Link to="/mens">Men</Link>{menu === "Mens" ? <hr /> : <></>}</li>
+                    <li onClick={() => { setMenu("Women") }}><Link to="/women">Women</Link>{menu === "Women" ? <hr /> : <></>}</li>
+                    <li onClick={() => { setMenu("Kids") }}><Link to="/kids">Kids</Link>{menu === "Kids" ? <hr /> : <></>}</li>
+                </ul>
+                <div className="nav-login-car">
+                    <button onClick={()=>{setMenu("login")}}><Link to='/login'>Login</Link></button>
+                    <Link to='/cart' onClick={()=>{setMenu("cart")}}><img src={cart_icon} alt='cart'/></Link>
+                    <div className="nav-cart-count">0</div>
+                </div>
+            </nav>
+        </div>
+    );
+};

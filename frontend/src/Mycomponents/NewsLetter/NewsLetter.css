@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+.newsLetter{
+width: 70%;
+height: 40vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin: auto;
+padding: 0vh 140px;
+margin-bottom: 15vh;
+background: linear-gradient(180deg,#78a6ec 8%,#f3b86b,#f48450);
+border-radius: 50px;
+}
+.newsLetter h1{
+    color: rgb(90, 87, 87);
+    font-size: 55px;
+    font-weight: 600;
+    margin-bottom: 2.8vh;
+}
+.newsLetter p{
+    color:rgb(90, 87, 87);
+    font-size: 22px;
+    margin-bottom: 1.9vh;
+}
+.newsLetter div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    width: 730px;
+    height: 70px;
+    border-radius: 50px;
+    border: 1px solid rgb(226, 210, 210);
+}
+.newsLetter input{
+    width: 500px;
+    margin-left: 20px;
+    border: none;
+    outline: none;
+    color: rgb(82, 75, 75);
+    font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+}
+.newsLetter div:hover{
+    transform: scale(1.03);
+    transform: 0.5s;
+}
+.newsLetter button{
+    width: 210px;
+    height: 70px;
+    border-radius: 80px;
+    background: black;
+    color: white;
+    font-size: 16px;
+}
+.newsLetter button:active{
+background-color: rgb(255, 130, 46);
+color: black;
+}
+@media screen and (max-width: 568px){
+    .newsLetter h1{
+        font-size: 18px;
+        margin-bottom: 0.8vh;
+    }
+    .newsLetter{
+        padding: 0;
+        width: 95%;
+        margin-top: 25px;
+        margin-bottom: 30px;
+        height: 25vh;
+    }
+    .newsLetter p{
+        font-size: 10px;
+    }
+    .newsLetter div{
+        width: 295px;
+        height: 50px;
+        margin-left:0px;
+    }
+    .newsLetter input{
+        width: 200px;
+    }
+    .newsLetter button{
+        height:50px;
+        
+    }
+}
